@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tem idade para beber?</title>
+</head>
+<body>
+<script>
+    const maiorIdade = 18;
+    function pulandolinha(){
+        document.writeln("<br>");
+    }
+    function calculaIdadeBebida(numIdade){
+        if (numIdade >= maiorIdade){
+            pulandolinha();
+            document.writeln("Eita nois, já pode beber e hoje é por sua conta!");
+        }else{
+            pulandolinha();
+            document.writeln("Pode beber, mas só sem alcool!");
+        }
+    }
+
+var Idade = prompt("Digite a sua idade para saber se pode beber");
+calculaIdadeBebida(Idade);
+ 
+</script>    
+</body>
+</html>

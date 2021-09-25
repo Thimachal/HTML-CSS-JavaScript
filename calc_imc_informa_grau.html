@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC com Usuário</title>
+</head>
+<body>
+<script>
+    function pulandolinha(){
+        document.writeln("<br> <br>");
+    }
+    function calculandoIMC(peso,altura){
+        var imc = peso / (altura*altura);
+        return imc;
+    }
+
+var nomeUsuario = prompt("Qual seu 1º nome?");
+var alturaUsuario = prompt("Beleza " + nomeUsuario + ", digite sua altura (no lugar da virgula coloque o ponto)");
+var pesoUsuario = prompt ("Tá " + nomeUsuario + ", agora preciso do seu peso para calcular seu IMC");
+
+var imc = calculandoIMC(pesoUsuario,alturaUsuario);
+pulandolinha();
+
+document.writeln(nomeUsuario + " Seu IMC é de: " + imc);
+pulandolinha();
+
+if ((imc >= 25) && (imc <=29.9)){
+    document.writeln("Está com sobrepeso, cuidado!");
+} else if ((imc >= 30) && (imc <=34.9)){
+        document.writeln("Está com obesidade grau 1, cuidado!");
+    } else if ((imc >= 35) && (imc <=39.9)){
+            document.writeln("Está com obesidade grau 2, cuidado!");
+        } else if (imc > 40){
+                document.writeln("Está com obesidade grau 3, cuidado e se cuide!");
+            } else {
+                    document.writeln("Menino(a), vá comer para pegar uns quilinhos!");
+                }
+</script>
+</body>
+</html>

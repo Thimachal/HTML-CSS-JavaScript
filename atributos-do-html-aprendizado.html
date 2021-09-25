@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrubutos HTML</title>
+
+</head>
+<body>
+    <form action="email">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Digite seu e-mail" autocomplete="email">
+    </form>
+    <br>
+    <label for="passwordlogin">Senha</label>
+    <input id="passwordlogin" 
+    type="password" 
+    required
+    pattern="[0-9a-fA-F]{4,8}" 
+    placeholder="Digite sua senha"        
+    >
+    <button type="submit">Enviar</button>
+    <br>
+
+    <br>
+    <form action="testeemail">
+        <label for="testeemail">Email</label>
+        <input type="email"
+        required
+        placeholder="Aqui seu email"
+        >
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+
+    <br>
+    <!---Formulario somente para o tipo file-->
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" accept=".pdf">
+
+    </form>
+    <br>
+
+    <!---SELECT e OPTION--->
+
+    <label for="prioridade">Selecione a Prioridade</label>
+    <select name="prioridade" id="prioridade">
+        <option value="">Normal</option>
+        <option value="">Alto</option>
+        <option value="">Emergencial</option>
+
+    </select>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de formulário</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" value="Digite seu nome">
+        <br><br>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <br>
+        <br>
+        <input type="text" name="nome" required> <!--obriga a digitar no campo-->
+        <br>
+        <br>
+        <input type="text" name="nome" value="não pode alterar" readonly> <!--não é alterado mais vai junto com o formulário paro backend-->
+        <br>
+        <br>
+        <input type="text" name="nome" value="não pode alterar" disabled> <!--não é alterado e não vai junto com o formulário paro backend-->
+        <br>
+        <br>
+        <input type="text" name="nome" maxlength="5">
+        <br>
+        <br>
+        <input type="submit" name="Enviar" value="Enviar">
+    </form>
+</body>
+</html>

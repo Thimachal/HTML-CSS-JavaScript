@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho-Adivinhe o número</title>
+</head>
+<body>
+<script>
+    function numeroAleatorio(n){
+       var sort = Math.round(Math.random() * n);
+       return sort;
+    }
+
+    sorteio = numeroAleatorio(10);
+    var numDigite = parseInt(prompt("Tente advinhar o número que o computador sorteou"));
+
+    if(numDigite == sorteio){
+        document.writeln("Acertou, já pode jogar na megasena!");
+    }else{
+        document.writeln("ohhh errou, tente outra vez. O número era: " + sorteio);
+    }
+
+    
+
+
+</script>   
+</body>
+</html>

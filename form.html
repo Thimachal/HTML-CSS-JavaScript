@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+</head>
+<body>
+    <form action="envio.php" method="POST"> <!--metodo GET consulta/pega infos ao backend e POST salva-->
+        <input type="text" name="nome">
+        <br>
+        <br>
+        <input type="checkbox" name="carro">tem carro
+        <br>
+        <br>
+        Validade Reserva <input type="date" name="validade"> 
+        <br>
+        <br>
+        <input type="radio" name="sexo" value="masculino">Maculino
+        <input type="radio" name="sexo" value="feminino">Feminino
+        <input type="radio" name="sexo" value="Outro">Outro
+        <br>
+        <br>
+        <input type="button" value="Click"> 
+        <br>
+        <br>
+        <textarea rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <input type="password" name="senha">
+        Digite sua senha
+        <br>
+        <input type="submit" value="Enviar">
+
+        
+    </form>
+</body>
+</html>

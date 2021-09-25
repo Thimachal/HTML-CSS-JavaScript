@@ -1,0 +1,31 @@
+><!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculando IMC</title>
+</head>
+<body>
+    <script>
+        function poeNaTela(resultado, nome){
+            document.writeln("O resultado do IMC de " + nome + " é: " + resultado);
+            pulandoLinha();
+        }
+
+        function pulandoLinha(){
+            document.writeln("<br> <br>");
+        }
+        
+        function calcIMC(altura1, peso1){
+            var imc =peso1 / (altura1*altura1);
+            return imc;
+        }
+
+        var imcThima = calcIMC(1.75,83);
+        var imcEsposaIsa = calcIMC(1.61,68);
+
+        poeNaTela(imcThima, "Thiago"); 
+        poeNaTela(imcEsposaIsa, "Isabela");
+
+    </script>    
+</body>
+</html>

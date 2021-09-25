@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Consumo de Comsbustível</title>
+</head>
+<body>
+    <h2>Gasolina ou Àlcool?</h2>
+    <script>
+        const precoAlcool = 5.90;
+        const precoGasola = 6.00;
+        const capacidadeTanque = 40;
+        var kmcomGasola = 480;
+        var kmcomAlcool = 300;
+        var consumocomAlcool, consumocomGasola;
+        var guardaGasola, guardaAlcool;
+
+        guardaGasola = kmcomGasola/capacidadeTanque;
+        guardaAlcool = kmcomAlcool/capacidadeTanque;
+        
+        document.writeln("O consumo de gasolina é de: " + guardaGasola + " Km por Litro");
+        document.writeln("e você gastará: R$ " + parseFloat(guardaGasola*precoGasola) +  "<br>");
+     
+        document.writeln("O consumo de alcool é de: " + guardaAlcool + " Km por Litro");
+        document.writeln("e você gastará: R$ " + parseFloat(guardaAlcool*precoAlcool) +  "<br>");
+    </script>
+</body>
+</html>

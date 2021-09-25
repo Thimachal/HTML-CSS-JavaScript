@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos do Brasileirão</title>
+</head>
+<body>
+<script>
+    function pulandolinha(){
+        document.writeln("<br> <br>");
+    }
+    function calculaPontos(vitorias,empates){
+        var pontos = vitorias * 3 + empates;
+        return pontos;
+    }
+    
+
+    var time = prompt("Que time você torce?");
+    var vitorias = parseInt (prompt ("Quantas vitórias tem " + time + "?"));
+    var empates = parseInt(prompt ("E empatou quantas?"));
+
+    var pontos = calculaPontos(vitorias,empates);
+    document.writeln("No Brasileirão " + time + " está com " + pontos + " pontos.");
+
+</script>   
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos da Bienal do Livro</title>
+</head>
+<body>
+<script>
+    function pulandolinha(){
+        document.writeln("<br>");
+    }
+    function poeNaTela(texto){
+        document.writeln(texto);
+    }
+    function bienal(anoLimite){
+        while(primeiraBienal <= anoLimite){
+        poeNaTela(primeiraBienal);
+        pulandolinha();
+        primeiraBienal = primeiraBienal+2;
+        }
+
+    }
+var primeiraBienal = 1970;
+var anoUsuario = parseInt(prompt("Digiteo ano limite"));
+bienal(anoUsuario);
+
+</script>    
+</body>
+</html>
